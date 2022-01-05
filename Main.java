@@ -1,7 +1,3 @@
-package com.company;
-
-import java.util.*;
-
 public class Main {
 
     public static String removeChars(String s, char[] arr) {
@@ -22,8 +18,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String str = "John Cena";
-        char[] a = { 'o', 'e' };
+        String str = "LeewayHertz";
+        char[] a = { 'e', 'r' };
         System.out.println(removeChars(str, a));
 
     }
