@@ -18,8 +18,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String str = "LeewayHertz";
-        char[] a = { 'e', 'r' };
+        String str = "Steve Jobs";
+        char[] a = { 't', 'v' };
         System.out.println(removeChars(str, a));
 
     }
