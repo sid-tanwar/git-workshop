@@ -1,6 +1,6 @@
 public class Main {
 
-    public static String removeChars(String s, char[] arr) {
+    public static String deleteChars(String s, char[] arr) {
 
         StringBuilder st = new StringBuilder(s);
         for (int i = 0; i < arr.length; i++) {
@@ -9,7 +9,7 @@ public class Main {
 
                 if (arr[i] == st.charAt(j)) {
 
-                    st = st.deleteCharAt(j);
+                    st = st.deleteCharAt(j); 
                 }
             }
         }
@@ -20,7 +20,7 @@ public class Main {
     public static void main(String[] args) {
         String str = "Siddharth Tanwar";
         char[] a = { 'd', 'a' };
-        System.out.println(removeChars(str, a));
+        System.out.println(deleteChars(str, a));
 
     }
 }
