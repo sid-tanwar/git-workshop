@@ -22,8 +22,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String str = "LeewayHertz";
-        char[] a = { 'e', 'w' };
+        String str = "John Cena";
+        char[] a = { 'o', 'e' };
         System.out.println(removeChars(str, a));
 
     }
