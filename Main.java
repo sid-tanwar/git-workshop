@@ -1,30 +1,26 @@
-package com.company;
-import java.util.*;
-
 public class Main {
+
+    public static String removeChars(String s, char[] arr) {
+
+        StringBuilder st = new StringBuilder(s);
+        for (int i = 0; i < arr.length; i++) {
+
+            for (int j = 0; j < st.length(); j++) {
+
+                if (arr[i] == st.charAt(j)) {
+
+                    st = st.deleteCharAt(j);
+                }
+            }
+        }
+        String ab = new String(st);
+        return ab;
+    }
+
     public static void main(String[] args) {
+        String str = "Siddharth Tanwar";
+        char[] a = { 'd', 'a' };
+        System.out.println(removeChars(str, a));
 
-        LinkedHashMap<Character, Integer> consonants = new LinkedHashMap<Character, Integer>();
-        Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
-        s = s.replaceAll("\\s", "");
-        char[] strArray = s.toCharArray();
-
-        for (char c : strArray){
-
-            if(c == 'a'|| c == 'e'|| c == 'i'|| c == 'o'|| c == 'u')
-                continue;
-
-
-            else if(consonants.containsKey(c))
-                    consonants.put(c, consonants.get(c) + 1);
-
-            else
-                consonants.put(c, 1);
-        }
-
-        for (Map.Entry entry : consonants.entrySet()) {
-            System.out.println(entry.getKey() + ":" + entry.getValue()+" ");
-        }
     }
 }
