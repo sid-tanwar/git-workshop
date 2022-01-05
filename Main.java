@@ -1,13 +1,13 @@
 public class Main {
 
-    public static String removeChars(String s, char[] arr){
+    public static String removeChars(String s, char[] arr) {
 
         StringBuilder st = new StringBuilder(s);
-        for(int i =0; i<arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
 
-            for(int j=0; j<st.length(); j++){
+            for (int j = 0; j < st.length(); j++) {
 
-                if(arr[i]==st.charAt(j)) {
+                if (arr[i] == st.charAt(j)) {
 
                     st = st.deleteCharAt(j);
                 }
@@ -18,8 +18,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String str = "Siddharth Tanwar";
-        char[] a = {'d', 'a'};
+        String str = "LeewayHertz";
+        char[] a = { 'e', 'a' };
         System.out.println(removeChars(str, a));
 
     }
